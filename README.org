@@ -1,0 +1,1 @@
+OCaml polymorphic map. Code taken from ExtLib, with minor additions.
