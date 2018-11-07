@@ -1,0 +1,20 @@
+opam-version: "1.2"
+name: "tjr_polymap"
+
+version: "0.0.1"
+
+maintainer: "Tom Ridge <tom.j.ridge@googlemail.com>"
+authors: "Tom Ridge <tom.j.ridge@googlemail.com>"
+homepage: "https://github.com/tomjridge/tjr_polymap"
+bug-reports: "https://github.com/tomjridge/tjr_polymap/issues"
+dev-repo: "https://github.com/tomjridge/tjr_polymap.git"
+
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+]
+
+depends: [
+  "extlib"
+]
+
