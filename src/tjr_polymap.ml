@@ -21,6 +21,7 @@ let cardinal: ('k,'v) t -> int = (fun m ->
     let x = ref 0 in
     PMap.iter (fun _k _v -> x:=!x+1) m;
     !x)
+let is_empty: ('k,'v) t -> bool = fun t -> cardinal t = 0
 let iter: ('k -> 'v -> unit) -> ('k,'v) t -> unit = PMap.iter
 let find: 'k -> ('k,'v) t -> 'v = PMap.find
 let find_opt: 'k -> ('k,'v) t -> 'v option = fun k t -> 
