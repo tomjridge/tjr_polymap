@@ -1,1 +1,4 @@
 /tjr_polymap.install
+
+_build/
+src/.merlin
