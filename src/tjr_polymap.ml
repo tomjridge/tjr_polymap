@@ -70,3 +70,6 @@ let foldi: ('a -> 'b -> 'c -> 'c) -> ('a , 'b) t -> 'c -> 'c =
   fun f t c ->
     PMap.foldi f t.map c
 
+let empty_int_map () = empty (Pervasives.compare : int -> int -> int)
+
+let empty_string_map () = empty (Pervasives.compare : string -> string -> int)
