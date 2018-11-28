@@ -73,3 +73,11 @@ let foldi: ('a -> 'b -> 'c -> 'c) -> ('a , 'b) t -> 'c -> 'c =
 let empty_int_map () = empty (Pervasives.compare : int -> int -> int)
 
 let empty_string_map () = empty (Pervasives.compare : string -> string -> int)
+
+
+let from_bindings ~compare kvs =
+  empty compare |> fun map0 ->
+  List.fold_left
+    (fun a (k,v) -> add k v a)
+    map0
+    kvs
