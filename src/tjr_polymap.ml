@@ -74,7 +74,7 @@ let empty_int_map () = empty (Pervasives.compare : int -> int -> int)
 
 let empty_string_map () = empty (Pervasives.compare : string -> string -> int)
 
-
+(** NOTE later bindings take precedence *)
 let from_bindings ~compare kvs =
   empty compare |> fun map0 ->
   List.fold_left
