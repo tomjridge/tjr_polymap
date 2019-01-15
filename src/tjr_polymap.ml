@@ -81,3 +81,8 @@ let from_bindings ~compare kvs =
     (fun a (k,v) -> add k v a)
     map0
     kvs
+
+
+(** NOTE m2 takes precedence *)
+let union m1 m2 = 
+  foldi (fun k v m -> add k v m) m2 m1
