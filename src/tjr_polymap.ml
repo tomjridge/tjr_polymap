@@ -1,3 +1,5 @@
+[@@@deprecated]
+
 (* Polymorphic map ops courtesy of extlib *)
 
 (* following needs polymorphic map - 
