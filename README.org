@@ -1,1 +1,3 @@
+DEPRECATED! USE TJR_LIB INSTEAD
+
 OCaml polymorphic map. Code taken from ExtLib, with minor additions.
